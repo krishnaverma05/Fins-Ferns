@@ -1,0 +1,187 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #afcfef;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+header {
+  background-color: #afcfef;
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.signup {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+
+.logo-title img {
+  width: 210px; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 5px;
+}
+
+.hero-section {
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  background: url("./images/background.webp") no-repeat center center;
+  background-size: cover;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about,
+.services,
+.contact {
+  padding: 5px 0;
+  width: 100%;
+}
+
+.service {
+  margin-bottom: 20px;
+}
+
+.photo {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#live-photo {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  image-orientation: url("./images/livep.png") no-repeat center center;
+}
+
+.toggle-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button.active {
+  background-color: #28a745; /* Green for active state */
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.monitor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.control{
+    display: flex;
+}

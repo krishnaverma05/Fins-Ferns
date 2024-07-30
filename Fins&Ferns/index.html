@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fins&Ferns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo-title">
+                    <img src="./images/logo.png" alt="Fins&Ferns Logo" class="logo">
+                    <h1>Fins&Ferns</h1>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="signup">
+                    <a href="#signup" class="btn">Login</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h2>Welcome to Our Automated Aquaponics System</h2>
+            <p>Optimizing your aquaculture with advanced technology</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Fins&Ferns, we specialize in delivering innovative automated solutions for aquaponics systems. Our advanced technology seamlessly monitors essential parameters such as temperature, humidity, pH, and water level, while providing live photo updates. With intelligent controls for fan, grow light, and humidifier, along with AI-driven predictions for optimal harvest times, we ensure your aquaculture operates at peak efficiency. Our mission is to enhance your aquaponics experience, making sustainable farming both easier and more productive.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Monitoring</h3>
+                <div class="monitor">
+                <p>Temperature: <span id="temperature">--</span> °C</p>
+                <p>Humidity: <span id="humidity">--</span> %</p>
+                <p>pH: <span id="ph">--</span></p>
+                <p>Water Level: <span id="water-level">--</span> cm</p>
+                </div>
+                <div class="photo">
+                    <h3>Live Photo</h3>
+                    <img id="live-photo" src="./images/livep.jpg" alt="Live Photo">
+                </div>
+            </div>
+            <div class="service">
+                <h3>Controls</h3>
+                <div class="control">
+                    <button id="fan-control" class="toggle-button">Fan</button>
+                <button id="grow-light-control" class="toggle-button">Grow Light</button>
+                <button id="humidifier-control" class="toggle-button">Humidifier</button>
+                </div>
+                
+            </div>
+            <div class="service">
+                <h3>AI Predictions</h3>
+                <p>Predicting optimal harvest times</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fins&Ferns. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
