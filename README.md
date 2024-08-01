@@ -1,5 +1,5 @@
 # Fins-Ferns
-*Demo link:[ ](https://fins-ferns.vercel.app/)
+*Demo link:(https://fins-ferns.vercel.app/)
 
 
 *Video link: https://drive.google.com/drive/folders/1l7F9NZ6Tjy22gRCe6miHzX9Hu7LZfyt0?usp=drive_link
